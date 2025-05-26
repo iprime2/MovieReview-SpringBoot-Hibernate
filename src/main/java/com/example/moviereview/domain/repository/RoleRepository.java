@@ -4,13 +4,14 @@ import com.example.moviereview.domain.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
+import java.util.UUID;
 
 /**
  * Repository for Role entities.
  * Provides CRUD and query-by-name for seeding & permission checks.
  */
 @Repository
-public interface RoleRepository extends JpaRepository<Role, Long> {
+public interface RoleRepository extends JpaRepository<Role, UUID> {
     /**
      * Find a role by its unique name.
      * Used when assigning roles to users.

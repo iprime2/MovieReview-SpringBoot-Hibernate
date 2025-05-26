@@ -4,13 +4,14 @@ import com.example.moviereview.domain.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
+import java.util.UUID;
 
 /**
  * Repository for User entities.
  * Extends JpaRepository to get CRUD methods.
  */
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, UUID> {
     /**
      * Creating custom method
      * Find a user by their email.
@@ -19,6 +20,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
      *  @return Optional<User>
      */
     Optional<User> findByEmail(String email);
+
+    Optional<User> getUserById(UUID id);
 
     /**
      * Creating Custom Method To Check if a user with the given email already exists.
