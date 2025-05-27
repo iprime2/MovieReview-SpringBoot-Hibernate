@@ -99,7 +99,8 @@ java -jar build/libs/moviereview-0.0.1-SNAPSHOT.jar
 ## 📬 Postman Collection
 
 - Easily test the API endpoints with the provided Postman collection:
-  - [Download the Postman Collection]([https://www.getpostman.com/collections/YOUR_COLLECTION_LINK](https://web.postman.co/workspace/7d631892-256e-438f-869e-080a11140ef7))
+  - https://web.postman.co/workspace/7d631892-256e-438f-869e-080a11140ef7
+  
 
 ---
 
