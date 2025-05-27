@@ -1,17 +1,16 @@
 package com.example.moviereview.config;
 
-import com.example.moviereview.domain.entity.Permission;
-import com.example.moviereview.domain.entity.Role;
-import com.example.moviereview.domain.entity.User;
-import com.example.moviereview.domain.repository.PermissionRepository;
-import com.example.moviereview.domain.repository.RoleRepository;
-import com.example.moviereview.domain.repository.UserRepository;
+import com.example.moviereview.domain.entity.*;
+import com.example.moviereview.domain.repository.*;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.io.InputStream;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -23,6 +22,8 @@ public class DataSeeder {
     private final RoleRepository roleRepository;
     private final PermissionRepository permissionRepository;
     private final PasswordEncoder passwordEncoder;
+    private final MovieRepository movieRepository;
+    private final MovieImageRepository movieImageRepository;
 
     @Bean
     public CommandLineRunner seedData() {
@@ -92,4 +93,39 @@ public class DataSeeder {
         };
     }
 
+    @Bean
+    public CommandLineRunner seedMovies() {
+        return args -> {
+            if (movieRepository.count() == 0) {
+                ObjectMapper mapper = new ObjectMapper();
+                InputStream is = getClass().getClassLoader().getResourceAsStream("movie_seed.json");
+                JsonNode node = mapper.readTree(is);
+
+                for (JsonNode movieNode : node) {
+                    Movie movie = Movie.builder()
+                            .title(movieNode.get("title").asText())
+                            .year(movieNode.get("year").asInt())
+                            .genre(movieNode.get("genre").asText())
+                            .description(movieNode.has("description") ? movieNode.get("description").asText(null) : null)
+                            .director(movieNode.has("director") ? movieNode.get("director").asText(null) : null)
+                            .build();
+
+                    List<MovieImage> images = new ArrayList<>();
+                    for (JsonNode imgNode : movieNode.get("images")) {
+                        MovieImage image = MovieImage.builder()
+                                .name(imgNode.get("name").asText())
+                                .imageUrl(imgNode.get("imageUrl").asText())
+                                .movie(movie)
+                                .build();
+                        images.add(image);
+                    }
+                    movie.setImages(images);
+
+                    // Save movie and images (cascade will save images if set properly)
+                    movieRepository.save(movie);
+//                    log.info("Seeded movie: {}", movie.getTitle());
+                }
+            }
+        };
+    }
 }

@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Puss in Boots: The Last Wish",
+    "year": 2022,
+    "genre": "Animation,Action,Adventure,Comedy,Family",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/1NqwE6LP9IEdOZ57NCT51ftHtWT.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/r9PkFnRUIthgBp2JZZzD380MWZy.jpg" },
+      { "name": "backdrop2", "imageUrl": "https://image.tmdb.org/t/p/original/faXT8V80JRhnArTAeYXz0Eutpv9.jpg" }
+    ]
+  },
+  {
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "genre": "Science Fiction,Action,Adventure",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg" },
+      { "name": "backdrop2", "imageUrl": "https://image.tmdb.org/t/p/original/evaFLqtswezLosllRZtJNMiO1UR.jpg" }
+    ]
+  },
+  {
+    "title": "M3GAN",
+    "year": 2023,
+    "genre": "Science Fiction,Horror,Comedy",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/xBl5AGw7HXZcv1nNXPlzGgO4Cfo.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/5kAGbi9MFAobQTVfK4kWPnIfnP0.jpg" }
+    ]
+  },
+  {
+    "title": "Troll",
+    "year": 2022,
+    "genre": "Fantasy,Action,Adventure",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/9z4jRr43JdtU66P0iy8h18OyLql.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/53BC9F2tpZnsGno2cLhzvGprDYS.jpg" }
+    ]
+  },
+  {
+    "title": "Black Adam",
+    "year": 2022,
+    "genre": "Fantasy,Action,Science Fiction",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg" }
+    ]
+  },
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "genre": "Fantasy,Action,Science Fiction,Adventure",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/o0s4XsEDfDlvit5pDRKjzXR4pp2.jpg" }
+    ]
+  },
+  {
+    "title": "Matilda the Musical",
+    "year": 2022,
+    "genre": "Fantasy,Family,Comedy",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/ga8R3OiOMMgSvZ4cOj8x7prUNYZ.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/nWs0auTqn2UaFGfTKtUE5tlTeBu.jpg" }
+    ]
+  },
+  {
+    "title": "Black Panther: Wakanda Forever",
+    "year": 2022,
+    "genre": "Action,Adventure,Science Fiction",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/cryEN3sWlgB2wTzcUNVtDGI8bkM.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/yYrvN5WFeGYjJnRzhY0QXuo4Isw.jpg" }
+    ]
+  },
+  {
+    "title": "Strange World",
+    "year": 2022,
+    "genre": "Family,Adventure,Science Fiction,Animation",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/kgJ8bX3zDQDM2Idkleis28XSVnu.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/5wDBVictj4wUYZ31gR5WzCM9dLD.jpg" }
+    ]
+  },
+  {
+    "title": "The Woman King",
+    "year": 2022,
+    "genre": "Action,Drama,History",
+    "description": null,
+    "director": null,
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/5O1GLla5vNuegqNxNhKL1OKE1lO.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/gkseI3CUfQtMKX41XD4AxDzhQb7.jpg" }
+    ]
+  },
+  {
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genre": "Drama,History",
+    "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+    "director": "Christopher Nolan",
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/s9YTxwaJGFy6jSqj1ZcTI9GJd1k.jpg" }
+    ]
+  },
+  {
+    "title": "Barbie",
+    "year": 2023,
+    "genre": "Comedy,Adventure,Fantasy",
+    "description": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.",
+    "director": "Greta Gerwig",
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/kdPMUMJzyYAc4roD52qavX0nLIC.jpg" }
+    ]
+  },
+  {
+    "title": "Guardians of the Galaxy Vol. 3",
+    "year": 2023,
+    "genre": "Action,Adventure,Science Fiction",
+    "description": "The Guardians must fight to keep their newfound family together as they unravel the mystery of Rocket's origins.",
+    "director": "James Gunn",
+    "images": [
+      { "name": "poster", "imageUrl": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" },
+      { "name": "backdrop1", "imageUrl": "https://image.tmdb.org/t/p/original/6ZXQy9yQKx2XGVa4f93uVm2Vbdi.jpg" }
+    ]
+  }
+]
