@@ -54,7 +54,7 @@ If you prefer to run PostgreSQL in a container (recommended for quick setup), us
 * In the project directory, start only the database container:
 
 ```bash
-docker compose up -d db
+docker compose up -d
 ```
 
 * This will spin up a PostgreSQL container using the configuration in your `docker-compose.yml` file (e.g., user, password, database).
@@ -93,6 +93,13 @@ java -jar build/libs/moviereview-0.0.1-SNAPSHOT.jar
 ```
 
 * The API is available at: [http://localhost:8080/api](http://localhost:8080/api)
+
+---
+
+## 📬 Postman Collection
+
+- Easily test the API endpoints with the provided Postman collection:
+  - [Download the Postman Collection]([https://www.getpostman.com/collections/YOUR_COLLECTION_LINK](https://web.postman.co/workspace/7d631892-256e-438f-869e-080a11140ef7))
 
 ---
 
