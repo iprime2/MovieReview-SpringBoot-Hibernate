@@ -2,6 +2,7 @@
 FROM eclipse-temurin:21-jdk as build
 WORKDIR /app
 COPY . .
+RUN chmod +x gradlew
 RUN ./gradlew clean build -x test
 
 # ---- Run Stage ----
