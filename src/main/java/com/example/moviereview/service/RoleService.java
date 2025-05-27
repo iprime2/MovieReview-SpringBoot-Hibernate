@@ -104,15 +104,31 @@ public class RoleService {
         return mapToResponse(updated);
     }
 
-    // Unlink permission from a role
-    public RoleResponse removePermissionFromRole(UUID roleId, UUID permissionId) {
-        log.info("[DELETE /api/roles/{}/permissions/{}] Unlinking permission from role", roleId, permissionId);
+    // Remove multiple permissions from a role with validation
+    public RoleResponse removePermissionsFromRole(UUID roleId, Set<UUID> permissionIds) {
+        log.info("[DELETE /api/roles/{}/permissions] Unlinking permissions {}", roleId, permissionIds);
+
+        // Fetch the role or throw 404
         Role role = roleRepository.findById(roleId)
                 .orElseThrow(() -> new NoSuchElementException("Role not found: " + roleId));
-        Permission permission = permissionRepository.findById(permissionId)
-                .orElseThrow(() -> new NoSuchElementException("Permission not found: " + permissionId));
-        role.getPermissions().remove(permission);
+
+        // Fetch permissions and check if all exist
+        List<Permission> foundPerms = permissionRepository.findAllById(permissionIds);
+        Set<UUID> foundIds = foundPerms.stream().map(Permission::getId).collect(Collectors.toSet());
+
+        // Find missing IDs
+        Set<UUID> missing = new HashSet<>(permissionIds);
+        missing.removeAll(foundIds);
+        if (!missing.isEmpty()) {
+            log.warn("[DELETE /api/roles/{}/permissions] Permissions not found: {}", roleId, missing);
+            throw new NoSuchElementException("Some permissions not found: " + missing);
+        }
+
+        // Remove permissions
+        role.getPermissions().removeAll(foundPerms);
         Role updated = roleRepository.save(role);
+
+        log.info("[DELETE /api/roles/{}/permissions] Successfully unlinked permissions {}", roleId, permissionIds);
         return mapToResponse(updated);
     }
 

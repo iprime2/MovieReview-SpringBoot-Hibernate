@@ -68,13 +68,12 @@ public class RoleController {
         return ResponseEntity.ok(roleService.addPermissionsToRole(roleId, request.getPermissionIds()));
     }
 
-    // Remove permission from a role
-    @DeleteMapping("/{roleId}/permissions/{permissionId}")
+    // Unlink permissions from a role
     @PreAuthorize("hasAuthority('ROLE_UPDATE')")
-    public ResponseEntity<RoleResponse> removePermissionFromRole(
+    @DeleteMapping("/{roleId}/permissions")
+    public ResponseEntity<RoleResponse> unlinkPermissionsFromRole(
             @PathVariable UUID roleId,
-            @PathVariable UUID permissionId
-    ) {
-        return ResponseEntity.ok(roleService.removePermissionFromRole(roleId, permissionId));
+            @RequestBody @Valid RolePermissionLinkRequest request) {
+        return ResponseEntity.ok(roleService.removePermissionsFromRole(roleId, request.getPermissionIds()));
     }
 }
