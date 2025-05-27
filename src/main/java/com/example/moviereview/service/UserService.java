@@ -4,6 +4,8 @@ import com.example.moviereview.domain.entity.Role;
 import com.example.moviereview.domain.entity.User;
 import com.example.moviereview.domain.repository.RoleRepository;
 import com.example.moviereview.domain.repository.UserRepository;
+import com.example.moviereview.dto.PermissionSummary;
+import com.example.moviereview.dto.RoleSummary;
 import com.example.moviereview.dto.UserRequest;
 import com.example.moviereview.dto.UserResponse;
 import jakarta.transaction.Transactional;
@@ -86,15 +88,15 @@ public class UserService {
      * Maps User entity to UserResponse DTO.
      */
     private UserResponse mapToResponse(User user) {
-        // Collect all role names
-        Set<String> roleNames = user.getRoles().stream()
-                .map(Role::getName)
+        // Map roles
+        Set<RoleSummary> roleSummaries = user.getRoles().stream()
+                .map(role -> new RoleSummary(role.getId(), role.getName()))
                 .collect(Collectors.toSet());
 
-        // Collect all permissions from all roles
-        Set<String> permissions = user.getRoles().stream()
+        // Map permissions (flatten all permissions across all roles)
+        Set<PermissionSummary> permissionSummaries = user.getRoles().stream()
                 .flatMap(role -> role.getPermissions().stream())
-                .map(permission -> permission.getName())
+                .map(permission -> new PermissionSummary(permission.getId(), permission.getName()))
                 .collect(Collectors.toSet());
 
         return UserResponse.builder()
@@ -102,8 +104,8 @@ public class UserService {
                 .email(user.getEmail())
                 .fullName(user.getFullName())
                 .enabled(user.getEnabled())
-                .roles(roleNames)
-                .permissions(permissions)   // <-- Add this line
+                .roles(roleSummaries)
+                .permissions(permissionSummaries)
                 .createdAt(user.getCreatedAt())
                 .build();
     }

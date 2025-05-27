@@ -7887,3 +7887,202 @@ Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted b
 2025-05-27 14:31:31 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-27 14:31:31 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
 2025-05-27 14:31:31 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2025-05-27 14:31:34 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-05-27 14:31:34 INFO  [restartedMain] c.e.m.MoviereviewApplication - Starting MoviereviewApplication using Java 21.0.6 with PID 29424 (C:\Users\Sushil\Desktop\moviereview\build\classes\java\main started by Sushil in C:\Users\Sushil\Desktop\moviereview)
+2025-05-27 14:31:34 INFO  [restartedMain] c.e.m.MoviereviewApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:31:34 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-27 14:31:34 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-27 14:31:35 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 14:31:35 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2025-05-27 14:31:35 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 14:31:35 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:31:35 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 14:31:35 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 14:31:35 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 14:31:35 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1456 ms
+2025-05-27 14:31:36 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 14:31:36 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@745b4586
+2025-05-27 14:31:36 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 14:31:36 INFO  [restartedMain] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5438/moviereview (PostgreSQL 15.13)
+2025-05-27 14:31:36 INFO  [restartedMain] o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.026s)
+2025-05-27 14:31:36 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2025-05-27 14:31:36 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-27 14:31:36 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 14:31:36 INFO  [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 14:31:36 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 14:31:36 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 14:31:36 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 14:31:37 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 14:31:37 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:31:38 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-27 14:31:38 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-27 14:31:38 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 14:31:38 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-27 14:31:38 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:31:38 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 14:31:39 INFO  [restartedMain] c.e.m.MoviereviewApplication - Started MoviereviewApplication in 5.062 seconds (process running for 5.58)
+2025-05-27 14:31:39 INFO  [RMI TCP Connection(4)-192.168.20.198] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-27 14:31:39 INFO  [RMI TCP Connection(4)-192.168.20.198] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-27 14:31:39 INFO  [RMI TCP Connection(4)-192.168.20.198] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-27 14:31:54 INFO  [http-nio-8080-exec-4] c.e.moviereview.service.RoleService - [GET /api/roles] Fetching all roles
+2025-05-27 14:32:10 INFO  [http-nio-8080-exec-5] c.e.moviereview.service.RoleService - [POST /api/roles/b337bcc5-98f9-4431-ba48-bfc239140fcb/permissions] Linking permissions [dbab3052-a367-4f8d-a2aa-d5881d345da1, 46844a99-f3b9-439e-b7a9-00cb7e300a70, 2533c104-e8c7-4fdd-8425-1299890e89d1, 48b06467-e9e1-462b-bc74-e2894b47c2e9] to role
+2025-05-27 14:34:10 INFO  [http-nio-8080-exec-8] c.e.m.controller.UserController - [GET /api/users] Fetching all users
+2025-05-27 14:34:10 INFO  [http-nio-8080-exec-8] c.e.moviereview.service.UserService - [GET /api/users] Fetching all users
+2025-05-27 14:34:26 INFO  [http-nio-8080-exec-9] c.e.m.controller.UserController - [GET /api/users/email/testuser@example.com] Fetching user by email
+2025-05-27 14:34:26 INFO  [http-nio-8080-exec-9] c.e.moviereview.service.UserService - [GET /api/users/email] Fetching user by email: testuser@example.com
+2025-05-27 14:34:29 INFO  [http-nio-8080-exec-3] c.e.m.controller.UserController - [GET /api/users/01486b59-b039-4fa9-9bf4-283462e2d247] Fetching user by ID
+2025-05-27 14:34:29 INFO  [http-nio-8080-exec-3] c.e.moviereview.service.UserService - [GET /api/users/{id}] Fetching user by ID: 01486b59-b039-4fa9-9bf4-283462e2d247
+2025-05-27 14:34:29 WARN  [http-nio-8080-exec-3] c.e.m.e.GlobalExceptionHandler - [GET /api/users/01486b59-b039-4fa9-9bf4-283462e2d247] Resource not found: User not found with id: 01486b59-b039-4fa9-9bf4-283462e2d247
+2025-05-27 14:34:29 WARN  [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.util.NoSuchElementException: User not found with id: 01486b59-b039-4fa9-9bf4-283462e2d247]
+2025-05-27 14:34:39 INFO  [http-nio-8080-exec-2] c.e.m.controller.UserController - [GET /api/users/e8ca8997-461e-4848-bec5-9ff5572752d2] Fetching user by ID
+2025-05-27 14:34:39 INFO  [http-nio-8080-exec-2] c.e.moviereview.service.UserService - [GET /api/users/{id}] Fetching user by ID: e8ca8997-461e-4848-bec5-9ff5572752d2
+2025-05-27 14:36:22 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-05-27 14:36:22 INFO  [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 14:36:22 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:22 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 14:36:22 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:22 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:22 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 14:36:22 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 14:36:22 INFO  [restartedMain] c.e.m.MoviereviewApplication - Starting MoviereviewApplication using Java 21.0.6 with PID 29424 (C:\Users\Sushil\Desktop\moviereview\build\classes\java\main started by Sushil in C:\Users\Sushil\Desktop\moviereview)
+2025-05-27 14:36:22 INFO  [restartedMain] c.e.m.MoviereviewApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 14:36:23 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:23 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 14:36:23 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 14:36:23 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 415 ms
+2025-05-27 14:36:23 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-27 14:36:23 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3779c670
+2025-05-27 14:36:23 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-27 14:36:23 INFO  [restartedMain] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5438/moviereview (PostgreSQL 15.13)
+2025-05-27 14:36:23 INFO  [restartedMain] o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+2025-05-27 14:36:23 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2025-05-27 14:36:23 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-27 14:36:23 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 14:36:23 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 14:36:23 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 14:36:23 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-27 14:36:23 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-27 14:36:23 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:23 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 14:36:24 INFO  [restartedMain] c.e.m.MoviereviewApplication - Started MoviereviewApplication in 1.107 seconds (process running for 290.576)
+2025-05-27 14:36:24 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-27 14:36:32 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2025-05-27 14:36:32 INFO  [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 14:36:32 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:32 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 14:36:32 INFO  [Thread-7] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:32 INFO  [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:32 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-27 14:36:32 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-27 14:36:32 INFO  [restartedMain] c.e.m.MoviereviewApplication - Starting MoviereviewApplication using Java 21.0.6 with PID 29424 (C:\Users\Sushil\Desktop\moviereview\build\classes\java\main started by Sushil in C:\Users\Sushil\Desktop\moviereview)
+2025-05-27 14:36:32 INFO  [restartedMain] c.e.m.MoviereviewApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:36:32 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 14:36:32 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 14:36:33 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:33 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 14:36:33 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 14:36:33 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 431 ms
+2025-05-27 14:36:33 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-27 14:36:33 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@351b39a
+2025-05-27 14:36:33 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-27 14:36:33 INFO  [restartedMain] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5438/moviereview (PostgreSQL 15.13)
+2025-05-27 14:36:33 INFO  [restartedMain] o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.005s)
+2025-05-27 14:36:33 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2025-05-27 14:36:33 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-27 14:36:33 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 14:36:33 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 14:36:33 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 14:36:33 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-27 14:36:33 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-27 14:36:33 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 14:36:33 INFO  [restartedMain] c.e.m.MoviereviewApplication - Started MoviereviewApplication in 1.054 seconds (process running for 300.277)
+2025-05-27 14:36:33 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-27 14:36:35 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2025-05-27 14:36:35 INFO  [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 14:36:35 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:35 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 14:36:35 INFO  [Thread-11] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:35 INFO  [Thread-11] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:35 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-27 14:36:35 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-27 14:36:35 INFO  [restartedMain] c.e.m.MoviereviewApplication - Starting MoviereviewApplication using Java 21.0.6 with PID 29424 (C:\Users\Sushil\Desktop\moviereview\build\classes\java\main started by Sushil in C:\Users\Sushil\Desktop\moviereview)
+2025-05-27 14:36:35 INFO  [restartedMain] c.e.m.MoviereviewApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 14:36:35 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:35 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 14:36:35 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 14:36:35 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 365 ms
+2025-05-27 14:36:35 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-27 14:36:35 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@5916bc28
+2025-05-27 14:36:35 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-27 14:36:35 INFO  [restartedMain] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5438/moviereview (PostgreSQL 15.13)
+2025-05-27 14:36:35 INFO  [restartedMain] o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+2025-05-27 14:36:35 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2025-05-27 14:36:35 INFO  [restartedMain] o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-27 14:36:35 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 14:36:35 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 14:36:35 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 14:36:35 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:35 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-27 14:36:35 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-27 14:36:36 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 14:36:36 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-27 14:36:36 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 14:36:36 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 14:36:36 INFO  [restartedMain] c.e.m.MoviereviewApplication - Started MoviereviewApplication in 1.017 seconds (process running for 302.811)
+2025-05-27 14:36:36 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-27 14:36:56 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 14:36:56 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 14:36:56 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 14:36:56 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-27 14:36:56 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
