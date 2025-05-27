@@ -31,7 +31,7 @@ public class UserService {
      * @return UserResponse DTO
      */
     public UserResponse createUser(UserRequest request) {
-        log.info("[POST /users] Creating user with email: {}", request.getEmail());
+        log.info("[POST /api/users] Creating user with email: {}", request.getEmail());
 
         Set<Role> roles = request.getRoleNames().stream()
                 .map(name -> roleRepository.findByName(name)
@@ -47,39 +47,39 @@ public class UserService {
                 .build();
 
         User saved = userRepository.save(user);
-        log.info("[POST /users] Created user with id: {}", saved.getId());
+        log.info("[POST /api/users] Created user with id: {}", saved.getId());
 
         return mapToResponse(saved);
     }
 
     public UserResponse getUserById(UUID id) {
-        log.info("[GET /users/{id}] Fetching user by ID: {}", id);
+        log.info("[GET /api/users/{id}] Fetching user by ID: {}", id);
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new NoSuchElementException("User not found with id: " + id));
         return mapToResponse(user);
     }
 
     public UserResponse getUserByEmail(String email) {
-        log.info("[GET /users/email] Fetching user by email: {}", email);
+        log.info("[GET /api/users/email] Fetching user by email: {}", email);
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new NoSuchElementException("User not found with email: " + email));
         return mapToResponse(user);
     }
 
     public List<UserResponse> getAllUsers() {
-        log.info("[GET /users] Fetching all users");
+        log.info("[GET /api/users] Fetching all users");
         return userRepository.findAll().stream()
                 .map(this::mapToResponse)
                 .toList();
     }
 
     public void deleteUser(UUID id) {
-        log.info("[DELETE /users/{id}] Deleting user with id: {}", id);
+        log.info("[DELETE /api/users/{id}] Deleting user with id: {}", id);
         if (!userRepository.existsById(id)) {
             throw new NoSuchElementException("User not found with id: " + id);
         }
         userRepository.deleteById(id);
-        log.info("[DELETE /users/{id}] Deleted user with id: {}", id);
+        log.info("[DELETE /api/users/{id}] Deleted user with id: {}", id);
     }
 
     /**
