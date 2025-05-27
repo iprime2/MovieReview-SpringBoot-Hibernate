@@ -86,14 +86,24 @@ public class UserService {
      * Maps User entity to UserResponse DTO.
      */
     private UserResponse mapToResponse(User user) {
+        // Collect all role names
+        Set<String> roleNames = user.getRoles().stream()
+                .map(Role::getName)
+                .collect(Collectors.toSet());
+
+        // Collect all permissions from all roles
+        Set<String> permissions = user.getRoles().stream()
+                .flatMap(role -> role.getPermissions().stream())
+                .map(permission -> permission.getName())
+                .collect(Collectors.toSet());
+
         return UserResponse.builder()
                 .id(user.getId())
                 .email(user.getEmail())
                 .fullName(user.getFullName())
                 .enabled(user.getEnabled())
-                .roles(user.getRoles().stream()
-                        .map(Role::getName)
-                        .collect(Collectors.toSet()))
+                .roles(roleNames)
+                .permissions(permissions)   // <-- Add this line
                 .createdAt(user.getCreatedAt())
                 .build();
     }

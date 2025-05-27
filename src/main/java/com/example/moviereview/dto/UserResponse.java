@@ -15,5 +15,6 @@ public class UserResponse {
     private String fullName;
     private boolean enabled;
     private Set<String> roles;
+    private Set<String> permissions;
     private LocalDateTime createdAt;
 }

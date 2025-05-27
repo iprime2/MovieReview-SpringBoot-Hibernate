@@ -7,19 +7,21 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 @RequiredArgsConstructor
 @Slf4j
 public class UserController {
 
     private final UserService userService;
 
+    @PreAuthorize("hasAuthority('USER_CREATE')")
     @PostMapping
     public ResponseEntity<UserResponse> createUser(@Valid @RequestBody UserRequest request) {
         log.info("[POST /users] Creating user for email: {}", request.getEmail());
@@ -44,6 +46,7 @@ public class UserController {
         return ResponseEntity.ok(userService.getUserByEmail(email));
     }
 
+    @PreAuthorize("hasAuthority('USER_DELETE')")
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable UUID id) {
         log.info("[DELETE /users/{}] Deleting user", id);

@@ -40,9 +40,9 @@ public class Role {
 
     /**
      * Many-to-many link to permissions.
-     * LAZY fetch because we rarely need all permissions when simply loading roles.
+     * Using the eager to get permission with of a role
      */
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "role_permissions",
             joinColumns = @JoinColumn(name = "role_id"),

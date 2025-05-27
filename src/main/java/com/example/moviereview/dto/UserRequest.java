@@ -21,5 +21,5 @@ public class UserRequest {
     @NotBlank(message = "Full name is required")
     private String fullName;
 
-    private List<String> roleNames; // e.g. ["ROLE_USER"]
+    private List<String> roleNames;
 }
