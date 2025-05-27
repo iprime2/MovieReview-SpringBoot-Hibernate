@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5438/moviereview
+    url: jdbc:postgresql://db.ntglhgjaditddnaxeurv.supabase.co:5432/postgres
     username: postgres
-    password: postgres
+    password: moviereview123
   jpa:
     hibernate:
       ddl-auto: validate
