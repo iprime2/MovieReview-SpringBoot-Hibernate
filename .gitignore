@@ -37,3 +37,6 @@ out/
 .vscode/
 
 logs/
+/logs/
+logs/movie-review-app.log
+/logs/movie-review-app.log

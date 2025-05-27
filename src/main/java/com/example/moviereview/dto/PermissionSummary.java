@@ -1,15 +1,12 @@
 package com.example.moviereview.dto;
 
-import lombok.Builder;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.util.Set;
 import java.util.UUID;
 
 @Data
-@Builder
-public class RoleResponse {
+@AllArgsConstructor
+public class PermissionSummary {
     private UUID id;
     private String name;
-    private Set<PermissionSummary> permissions;
 }

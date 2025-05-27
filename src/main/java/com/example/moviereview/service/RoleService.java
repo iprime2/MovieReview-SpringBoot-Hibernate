@@ -4,6 +4,7 @@ import com.example.moviereview.domain.entity.Permission;
 import com.example.moviereview.domain.entity.Role;
 import com.example.moviereview.domain.repository.PermissionRepository;
 import com.example.moviereview.domain.repository.RoleRepository;
+import com.example.moviereview.dto.PermissionSummary;
 import com.example.moviereview.dto.RoleRequest;
 import com.example.moviereview.dto.RoleResponse;
 import lombok.RequiredArgsConstructor;
@@ -134,14 +135,14 @@ public class RoleService {
 
     // Maps Role entity to RoleResponse DTO
     private RoleResponse mapToResponse(Role role) {
+        Set<PermissionSummary> perms = role.getPermissions().stream()
+                .map(p -> new PermissionSummary(p.getId(), p.getName()))
+                .collect(Collectors.toSet());
+
         return RoleResponse.builder()
                 .id(role.getId())
                 .name(role.getName())
-                .permissions(role.getPermissions() == null
-                        ? Set.of()
-                        : role.getPermissions().stream()
-                        .map(Permission::getName)
-                        .collect(Collectors.toSet()))
+                .permissions(perms)
                 .build();
     }
 }
