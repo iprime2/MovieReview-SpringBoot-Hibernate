@@ -49,7 +49,7 @@ public class PermissionController {
     @PreAuthorize("hasAuthority('PERMISSION_DELETE')")
     public ResponseEntity<Map<String, Object>> deletePermission(@PathVariable UUID id) {
         permissionService.deletePermission(id);
-        // send proper response on permission deletion
+        // sending proper response on permission deletion
         return ResponseEntity.ok(
                 Map.of(
                         "success", true,
